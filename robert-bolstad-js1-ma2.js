@@ -19,13 +19,11 @@ function respondToClick() {
 button.addEventListener("click", respondToClick);
 
 
-
 // Question 3
-const input = document.getElementById("#firstName");
+const input = document.getElementById("firstName");
 
-document.addEventListener ("keydown", function (gettingId){
-    console.log("event", gettingId);
-    
+input.addEventListener("keydown", function(event){
+    console.log(event.key)
 });
 
 
@@ -112,4 +110,3 @@ function updateDiv(){
 }
 
 setTimeout(updateDiv, 2000);
-
